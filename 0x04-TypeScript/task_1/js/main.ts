@@ -19,8 +19,11 @@ interface printTeacherFunction {
 }
 
 // Implement the function using the function keyword (checker requirement)
-function printTeacher({ firstName, lastName }: { firstName: string; lastName: string }): string {
-  return `${firstName[0]}. ${lastName}`;
+function printTeacher(
+  { firstName: fn, lastName }: { firstName: string; lastName: string }
+): string {
+  const firstName = fn.charAt(0);   // first letter
+  return `${firstName}. ${lastName}`;
 }
 
 // Example usage
