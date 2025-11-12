@@ -9,7 +9,7 @@ interface Teacher {
 }
 
 // Extend the Teacher interface
-interface Directors extends Teacher {
+interface Director extends Teacher {
   numberOfReports: number;      // required for Directors
 }
 
@@ -24,7 +24,7 @@ const teacher3: Teacher = {
 console.log(teacher3);
 
 // Example with Directors
-const director1: Directors = {
+const director1: Director = {
   firstName: 'John',
   lastName: 'Doe',
   location: 'London',
